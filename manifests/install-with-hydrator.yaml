@@ -15410,6 +15410,31 @@ spec:
                                   requeueAfterSeconds:
                                     format: int64
                                     type: integer
+                                  sourceCraft:
+                                    properties:
+                                      api:
+                                        type: string
+                                      insecure:
+                                        type: boolean
+                                      organization:
+                                        type: string
+                                      repo:
+                                        type: string
+                                      tokenRef:
+                                        properties:
+                                          key:
+                                            type: string
+                                          secretName:
+                                            type: string
+                                        required:
+                                        - key
+                                        - secretName
+                                        type: object
+                                    required:
+                                    - api
+                                    - organization
+                                    - repo
+                                    type: object
                                   template:
                                     properties:
                                       metadata:
@@ -16523,6 +16548,30 @@ spec:
                                   requeueAfterSeconds:
                                     format: int64
                                     type: integer
+                                  sourceCraft:
+                                    properties:
+                                      allBranches:
+                                        type: boolean
+                                      api:
+                                        type: string
+                                      insecure:
+                                        type: boolean
+                                      organization:
+                                        type: string
+                                      tokenRef:
+                                        properties:
+                                          key:
+                                            type: string
+                                          secretName:
+                                            type: string
+                                        required:
+                                        - key
+                                        - secretName
+                                        type: object
+                                    required:
+                                    - api
+                                    - organization
+                                    type: object
                                   template:
                                     properties:
                                       metadata:
@@ -23062,6 +23111,31 @@ spec:
                                   requeueAfterSeconds:
                                     format: int64
                                     type: integer
+                                  sourceCraft:
+                                    properties:
+                                      api:
+                                        type: string
+                                      insecure:
+                                        type: boolean
+                                      organization:
+                                        type: string
+                                      repo:
+                                        type: string
+                                      tokenRef:
+                                        properties:
+                                          key:
+                                            type: string
+                                          secretName:
+                                            type: string
+                                        required:
+                                        - key
+                                        - secretName
+                                        type: object
+                                    required:
+                                    - api
+                                    - organization
+                                    - repo
+                                    type: object
                                   template:
                                     properties:
                                       metadata:
@@ -24175,6 +24249,30 @@ spec:
                                   requeueAfterSeconds:
                                     format: int64
                                     type: integer
+                                  sourceCraft:
+                                    properties:
+                                      allBranches:
+                                        type: boolean
+                                      api:
+                                        type: string
+                                      insecure:
+                                        type: boolean
+                                      organization:
+                                        type: string
+                                      tokenRef:
+                                        properties:
+                                          key:
+                                            type: string
+                                          secretName:
+                                            type: string
+                                        required:
+                                        - key
+                                        - secretName
+                                        type: object
+                                    required:
+                                    - api
+                                    - organization
+                                    type: object
                                   template:
                                     properties:
                                       metadata:
@@ -27099,6 +27197,31 @@ spec:
                         requeueAfterSeconds:
                           format: int64
                           type: integer
+                        sourceCraft:
+                          properties:
+                            api:
+                              type: string
+                            insecure:
+                              type: boolean
+                            organization:
+                              type: string
+                            repo:
+                              type: string
+                            tokenRef:
+                              properties:
+                                key:
+                                  type: string
+                                secretName:
+                                  type: string
+                              required:
+                              - key
+                              - secretName
+                              type: object
+                          required:
+                          - api
+                          - organization
+                          - repo
+                          type: object
                         template:
                           properties:
                             metadata:
@@ -28212,6 +28335,30 @@ spec:
                         requeueAfterSeconds:
                           format: int64
                           type: integer
+                        sourceCraft:
+                          properties:
+                            allBranches:
+                              type: boolean
+                            api:
+                              type: string
+                            insecure:
+                              type: boolean
+                            organization:
+                              type: string
+                            tokenRef:
+                              properties:
+                                key:
+                                  type: string
+                                secretName:
+                                  type: string
+                              required:
+                              - key
+                              - secretName
+                              type: object
+                          required:
+                          - api
+                          - organization
+                          type: object
                         template:
                           properties:
                             metadata:
